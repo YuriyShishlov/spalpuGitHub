@@ -1,5 +1,21 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "СФА";
 }
+@section tree{
+    @Html.Partial("_TreePartial")
+}
+@section content{
 
-<h1>Привет LESS!</h1>
+}
+@section scripts{
+    <script type="text/javascript">
+        $(function () {
+
+            $('#menu').metisMenu();
+
+            $('#menu2').metisMenu({
+                toggle: false
+            });
+        });
+    </script>
+}

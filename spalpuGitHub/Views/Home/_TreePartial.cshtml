@@ -1,0 +1,83 @@
+﻿@using spalpuGitHub.NewAjaxActionLink
+@{
+    AjaxOptions ajaxopts = new AjaxOptions
+    {
+        UpdateTargetId = "loadcontent",
+        InsertionMode = InsertionMode.Replace,
+        HttpMethod = "GET"
+    };
+}
+<h4>@Ajax.ActionLink("Жизнь - это Движение", "Index", "Home", new { strpage = "LifeGo/_lifego" }, ajaxopts)</h4>
+<ul id="menu">
+    <li class="active">
+        @Ajax.RawActionLink("Здоровье <span class='fa arrow'></span>", "Index", "Home", new { strpage = "LifeGo/_osteochondrosis" }, ajaxopts, null)
+        <ul>
+            <li>@Ajax.ActionLink("Остеохондроз", "Index", "Home", new { strpage = "LifeGo/_osteochondrosis" }, ajaxopts)</li>
+            <li>@Ajax.ActionLink("Наши Мышцы", "Index", "Home", new { strpage = "LifeGo/_mysshtsy" }, ajaxopts)</li>
+            <li>@Ajax.ActionLink("Что такое Мышца?", "Index", "Home", new { strpage = "LifeGo/_whomysshtsy" }, ajaxopts)</li>
+            <li>@Ajax.ActionLink("Расслабление", "Index", "Home", new { strpage = "LifeGo/_relaxation" }, ajaxopts)</li>
+        </ul>
+    </li>
+    <li>
+        @Ajax.RawActionLink("Азбука СФА <span class='fa arrow'></span>", "Index", "Home", new { strpage = "LifeGo/SPHA/_gold_rules" }, ajaxopts, null)
+        <ul>
+            <li>@Ajax.ActionLink("Зарядка для Хвоста", "Index", "Home", new { strpage = "LifeGo/SPHA/_charging_for_tail" }, ajaxopts)</li>
+            <li>@Ajax.ActionLink("Самостоятельно", "Index", "Home", new { strpage = "LifeGo/SPHA/_singly" }, ajaxopts)</li>
+            <li>@Ajax.ActionLink("Брусья", "Index", "Home", new { strpage = "LifeGo/SPHA/_bars" }, ajaxopts)</li>
+        </ul>
+    </li>
+    <li>
+        @Ajax.RawActionLink("Дыхание <span class='fa arrow'></span>", "Index", "Home", new { strpage = "LifeGo/SPHA/_breathing_exercises" }, ajaxopts, null)
+        <ul>
+            <li>@Ajax.ActionLink("Упражнения", "Index", "Home", new { strpage = "LifeGo/SPHA/_breathing_exercises_relax" }, ajaxopts)</li>
+        </ul>
+    </li>
+    <li>
+        @Ajax.RawActionLink("Массаж <span class='fa arrow'></span>", "Index", "Home", new { strpage = "LifeGo/SPHA/_massage" }, ajaxopts, null)
+        <ul>
+            <li>@Ajax.ActionLink("Массаж и боль", "Index", "Home", new { strpage = "LifeGo/SPHA/_massage_and_pain" }, ajaxopts)</li>
+            <li>@Ajax.ActionLink("Дуэт", "Index", "Home", new { strpage = "LifeGo/SPHA/_Massage_is_available_to_everyone" }, ajaxopts)</li>
+            <li>@Ajax.ActionLink("Классический массаж", "Index", "Home", new { strpage = "LifeGo/SPHA/_classic_massage" }, ajaxopts)</li>
+            <li>@Ajax.ActionLink("Тайский массаж", "Index", "Home", new { strpage = "LifeGo/SPHA/_Thai_massage" }, ajaxopts)</li>
+            <li>@Ajax.ActionLink("Массаж ног", "Index", "Home", new { strpage = "LifeGo/SPHA/_foot_massage" }, ajaxopts)</li>
+            <li>@Ajax.ActionLink("Массаж таза", "Index", "Home", new { strpage = "LifeGo/SPHA/_pelvic_massage" }, ajaxopts)</li>
+            <li>@Ajax.ActionLink("Массаж живота", "Index", "Home", new { strpage = "LifeGo/SPHA/_abdominal_massage" }, ajaxopts)</li>
+            <li>@Ajax.ActionLink("Массаж шеи", "Index", "Home", new { strpage = "LifeGo/SPHA/_neck_massage" }, ajaxopts)</li>
+            <li>@Ajax.ActionLink("Заключение", "Index", "Home", new { strpage = "LifeGo/SPHA/_conclusion" }, ajaxopts)</li>
+        </ul>
+    </li>
+    <li>
+        @Ajax.RawActionLink("Приложение <span class='fa arrow'></span>", "Index", "Home", new { strpage = "LifeGo/SPHA/_attachment" }, ajaxopts, null)
+        <ul>
+            <li>@Ajax.ActionLink("Острый период 1", "Index", "Home", new { strpage = "LifeGo/SPHA/_acute_period1" }, ajaxopts)</li>
+            <li>@Ajax.ActionLink("Острый период 2", "Index", "Home", new { strpage = "LifeGo/SPHA/_acute_period2" }, ajaxopts)</li>
+            <li>@Ajax.ActionLink("Острый период 3", "Index", "Home", new { strpage = "LifeGo/SPHA/_acute_period3" }, ajaxopts)</li>
+            <li>@Ajax.ActionLink("Специальные", "Index", "Home", new { strpage = "LifeGo/SPHA/_special" }, ajaxopts)</li>
+            <li>@Ajax.ActionLink("Методика", "Index", "Home", new { strpage = "LifeGo/SPHA/_metodika" }, ajaxopts)</li>
+            <li>@Ajax.ActionLink("Памятка", "Index", "Home", new { strpage = "LifeGo/SPHA/_all" }, ajaxopts)</li>
+        </ul>
+    </li>
+</ul>
+
+@*<li>
+        @Ajax.ActionLink("Приложение", "Index", "Home", new { strpage = "LifeGo/SPHA/_attachment" }, ajaxopts)
+        <ul>
+
+            <li>@Ajax.ActionLink("Острый период 1", "Index", "Home", new { strpage = "LifeGo/SPHA/_acute_period1" }, ajaxopts)</li>
+            <li>@Ajax.ActionLink("Острый период 2", "Index", "Home", new { strpage = "LifeGo/SPHA/_acute_period2" }, ajaxopts)</li>
+            <li><a href="#">Под-подпапка 2</a></li>
+            <li><a href="#">Под-подпапка 3</a></li>
+        </ul>
+    </li>*@
+@*<li>
+        <a href="#">Папка 3</a>
+        <ul>
+            <li>
+                <a href="#">Подпапка 2</a>
+                <ul>
+                    <li><a href="#">Под-подпапка 1</a></li>
+                    <li><a href="#">Под-подпапка 2</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>*@

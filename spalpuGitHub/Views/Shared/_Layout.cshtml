@@ -6,15 +6,26 @@
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/less")
     @Scripts.Render("~/bundles/modernizr")
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     @RenderSection("meta", required: false)
 </head>
 <body>
-    
-        @RenderBody()
-        
+    <div id="wrapper">
+        <header>
+            @Html.Partial("_header")
+        </header>
+        <aside>
+            @RenderSection("tree")
+        </aside>
+        <article>
+            @RenderSection("content")
+        </article>
+        <footer>
+            @Html.Partial("_footer")
+        </footer>
+    </div>
 
     @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 </body>
 </html>
