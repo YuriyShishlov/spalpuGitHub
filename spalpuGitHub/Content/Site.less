@@ -1,7 +1,8 @@
 ﻿/*Начало Определение переменных LESS*/
-/*Фон Tree*/
-/*Фон активного блока*/
+@color_background: #F8F8F8; /*Фон aside*/
+@color_active: #EEEEEE; /*Фон aside при наведениии*/
 /*Конец Определение переменных LESS*/
+
 /*Начало Общие*/
 #wrapper {
   width: 100%;
@@ -27,7 +28,7 @@
   padding: 4px 10px 4px 0;
 }
 #menu a:hover {
-  background-color: #eee;
+  background-color: @color_active;
 }
 .arrow {
   float: right;
