@@ -1,0 +1,25 @@
+﻿<div id="loadcontent">
+    @Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "LifeGo/SPHA/_conclusion" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET" }, new { @class = "back" })
+    @Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "LifeGo/SPHA/_acute_period1" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET" }, new { @class = "forward" })
+
+
+    <h1>Лечебная физкультура. Упражнения для спины.</h1>
+    <p><strong>ПАМЯТКА</strong></p>
+    <p>для самостоятельных занятий лечебной физкультурой</p>
+    <p>при остеохондрозе поясничного отдела позвоночника</p>
+    <p> В профилактике и лечении остеохондроза позвоночника существенное значение имеют систематические занятия специальной <strong>Лечебной Гимнастикой</strong>.</p>
+    <p> Прежде чем приступить к <strong>Самостоятельным Занятиям Лечебной Гимнастикой</strong>, необходимо <strong>проконсультироваться</strong> со специалистом (невропатолог, ортопед-травматолог, врач ЛФК).</p>
+    <p> Заниматься <strong>Лечебной Гимнастикой</strong> можно в <u>любое время дня</u>. Очень полезно <strong>утром</strong>, сразу после сна, выполнить несколько упражнений (например, упр. № 1, 3, 13, 17, 20 <strong>Острого Периода</strong>), затем совершить утренний туалет и <strong>продолжать</strong> выполнение упражнений, согласно предписанному врачом и методистом ЛФК комплексу.</p>
+    <p> Одежда во время выполнения упражнений должна быть легкой, не стесняющей движений, но и не допускающая переохлаждения, лучше всего - шерстяной тренировочный костюм.</p>
+    <p> Некоторые из рекомендованных вам упражнений полезно выполнять <strong>в течение</strong> <strong>рабочего дня</strong> (например, упражнение № I тренировочного периода - <strong>Периода</strong> <strong>Ремиссии</strong>).</p>
+    <p><strong>П О М Н И Т Е !</strong></p>
+    <p> Появление <strong>Болевых Ощущений</strong> во время выполнения упражнений является <strong>Сигналом</strong> к снижению амплитуды выполнения упражнений, их <strong>интенсивности</strong> или к полному <strong>прекращению</strong> их выполнения.</p>
+    <p> Для того чтобы занятия <strong>Лечебной Гимнастикой</strong> приносили наибольшую пользу, следует:</p>
+    <p> а) выполнять упражнения <strong>ежедневно</strong>;</p>
+    <p> б) выполнять упражнения старательно, в <strong>медленном темпе</strong>, не искажая самовольно форму, скорость и интенсивность выполняемых упражнений;</p>
+    <p> в) при выполнении упражнений <strong>не задерживать дыхание</strong>;</p>
+    <p> г) периодически <strong>консультироваться</strong> с врачом, не скрывая от него свои недуги.</p>
+
+    @Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "LifeGo/SPHA/_conclusion" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs" }, new { @class = "back" })
+    @Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "LifeGo/SPHA/_acute_period1" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs" }, new { @class = "forward" })
+</div>

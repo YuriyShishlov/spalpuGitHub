@@ -15,10 +15,18 @@
             @Html.Partial("_header")
         </header>
         <aside>
-            @RenderSection("tree")
+            @RenderSection("aside")
         </aside>
         <article>
-            @RenderSection("content")
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-10 col-md-offset-1">
+                        <div class="panel panel-default">
+                            @RenderSection("article")
+                        </div>
+                    </div>
+                </div>
+            </div>
         </article>
         <footer>
             @Html.Partial("_footer")

@@ -1,0 +1,27 @@
+﻿<div id="loadcontent">
+    @Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "LifeGo/SPHA/_pelvic_massage" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET" }, new { @class = "back" })
+    @Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "LifeGo/SPHA/_neck_massage" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET" }, new { @class = "forward" })
+
+    <h1>Массаж живота</h1>
+    <img src="~/Content/images/imagPublic/dubl/5_1.png"/>
+    <p><strong>Массаж живота проводится <u>Классическими</u> Приемами, основное Направление Движений &ndash; <u>по Часовой Стрелке</u> (по <em>Ходу</em> кишечника). Межреберные промежутки, грудина, область ключиц и основание грудных мышц прорабатываются Шагами Пальцев Рук. Проводят так же их Короткое Растирание.</strong></p>
+    <img src="~/Content/images/imagPublic/dubl/5_2.png"/>
+    <p><strong><u>Повторная</u></strong><strong> проработка кисти, дренаж мышц руки заканчивается Встряхивающими и Скручивающими Движениями. Затем проводят Вытягивание руки в плечевом суставе с <em>Упором</em> в подмышечную впадину. Движения <em>Плавные</em> и Осторожные. <u>Симметрично повторить для другой руки</u>.</strong></p>
+    <img src="~/Content/images/imagPublic/dubl/5_3.png" />
+    <img src="~/Content/images/imagPublic/dubl/5_4.png" />
+    <img src="~/Content/images/imagPublic/dubl/5_5.png"/>
+    <p><strong>Произвести Перевод руки вверх над головой через сторону, <em>Постоянно</em> Встряхивая и Вращая ее вокруг оси. В случае <em>Туго</em>подвижности Сустава можно <em>Подложить</em> колено под плечо, Выделить плечевой сустав и Проработать его приемами Классического Массажа. Согнув руку в локте &laquo;Треугольником&raquo; и <em>Надавливая</em> на локоть своей рукой, производят осторожное Растягивание плеча и грудной мышцы. Продолжая Движение, Переводят локоть в сторону и выполняют <em>Круговые</em> Движения Локтем. <u>Симметрично выполняется</u> <u>для другой руки</u>. Со стороны головы производят Вытягивание обеих рук сразу, их Встряхивание и Скручивание вокруг оси. Можно так же выполнять Разводящие и Скрестные Движения руками.</strong></p>
+    <img src="~/Content/images/imagPublic/dubl/5_6.png"/>
+    <p><strong>К Растягиванию Шейных Позвонков приступают после <em>Предварительной</em> Проработки мышц шеи, ушных раковин, волосистой части головы. Удерживая голову <u>за затылок</u> (иногда и <u>подбородок</u>), Осторожным Движением Потянуть голову назад, затем опустить ее на поверхность. Выполнить два-три раза.</strong></p>
+    <img src="~/Content/images/imagPublic/dubl/5_7.png"/>
+    <p><strong>Повернув голову в Сторону и удерживая ее за затылок и подбородок, повторить вытягивание так же два-три раза. <u>Симметрично выполнить в <em>противо</em>положенную сторону.</u></strong></p>
+    <img src="~/Content/images/imagPublic/dubl/5_8.png"/>
+    <p><strong>Массаж Лица является <em><u>Косметической</u> </em>Процедурой, но все же не плохо использовать Простейшие Приемы его для Расслабления <em>Мимических </em>Мышц. Легкие, Поглаживающие Движения Большими Пальцами Рук выполняются от Середины Лица по направлению к ушным раковинам.</strong></p>
+    <img src="~/Content/images/imagPublic/dubl/5_9.png"/>
+    <p><strong>Растягивание Позвоночника выполняется обычно на <em>Завершающем</em> Этапе Массажа. Глубоко запустить предплечья под спину Пациента, почти до поясницы. <u>Трение</u> его Ног и Таза о поверхность создает <em>Необходимый</em> Упор. Вытягивая руки вдоль позвоночника, Осторожно Растягиваем Туловище и укладываем Спину на Опору.</strong></p>
+    <img src="~/Content/images/imagPublic/dubl/5_10.png"/>
+    <p><strong>Для более &laquo;Продвинутых&raquo; Пациентов, не находящихся в Острой Стадии Воспаления, возможно растягивание с Упором Ногами в Таз и руками за подмышечные впадины. Руки можно <em>Сцепить</em> в &laquo;Замок&raquo; на животе.</strong></p>
+
+    @Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "LifeGo/SPHA/_pelvic_massage" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs" }, new { @class = "back" })
+    @Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "LifeGo/SPHA/_neck_massage" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs" }, new { @class = "forward" })
+</div>

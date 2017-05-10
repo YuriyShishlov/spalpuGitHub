@@ -8,8 +8,12 @@ namespace spalpuGitHub.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Index(string strpage = "main")
         {
+            if (Request.IsAjaxRequest())
+            {
+                return PartialView(strpage);
+            }
             return View();
         }
 
