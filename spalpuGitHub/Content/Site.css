@@ -16,6 +16,14 @@
   /*Убрать подчеркивание у ссылок*/
 }
 /*Конец Общие*/
+/*Начало Навигационное меню*/
+.navbar-toggle {
+  border-color: #428bca;
+}
+.icon-bar {
+  border: 1px solid #428bca;
+}
+/*Конец Навигационное меню*/
 /*Начало Стрелки Вперед Назад*/
 #loadcontent a.forward,
 a.back {
@@ -27,6 +35,7 @@ a.back {
   text-align: center;
   line-height: 30px;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 #loadcontent a.back {
   float: left;

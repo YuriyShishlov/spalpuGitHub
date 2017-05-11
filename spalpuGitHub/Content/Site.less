@@ -4,6 +4,7 @@
 @color_font_article: #333333;
 @color_a_hover: #E8C0A0;
 @color_back_forward: #588FB4;
+@color_font: #428BCA;
 /*Конец Определение переменных LESS*/
 
 /*Начало Шрифты для сайта*/
@@ -19,10 +20,18 @@
 
 #wrapper a,
 #wrapper a:hover {
-    text-decoration: none;
-    /*Убрать подчеркивание у ссылок*/
+    text-decoration: none; /*Убрать подчеркивание у ссылок*/
 }
 /*Конец Общие*/
+
+/*Начало Навигационное меню*/
+.navbar-toggle {
+    border-color: @color_font;
+}
+.icon-bar{
+    border: 1px solid @color_font;
+}
+/*Конец Навигационное меню*/
 
 /*Начало Стрелки Вперед Назад*/
 #loadcontent a.forward, a.back {
@@ -34,6 +43,7 @@
     text-align: center;
     line-height: 30px;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 #loadcontent a.back {
