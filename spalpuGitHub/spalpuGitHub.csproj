@@ -137,6 +137,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\bootstrap.less" />
+    <Content Include="Content\images\header.png" />
+    <Content Include="Content\images\header2.jpg" />
+    <Content Include="Content\images\header3.jpg" />
+    <Content Include="Content\Site.css.map">
+      <DependentUpon>Site.css</DependentUpon>
+    </Content>
     <None Include="Content\Site.less" />
     <Content Include="Content\images\andr.jpg" />
     <Content Include="Content\images\favicon.ico" />
@@ -483,6 +489,12 @@
     <Content Include="Content\images\page.jpg" />
     <Content Include="Content\images\plus.png" />
     <Content Include="Content\images\pop_up\close.png" />
+    <Content Include="Content\Site.css">
+      <DependentUpon>Site.less</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.min.css">
+      <DependentUpon>Site.css</DependentUpon>
+    </Content>
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

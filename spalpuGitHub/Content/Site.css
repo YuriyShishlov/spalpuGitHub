@@ -1,0 +1,130 @@
+﻿/*Начало Определение переменных LESS*/
+/*Фон aside*/
+/*Фон aside при наведениии*/
+/*Конец Определение переменных LESS*/
+/*Начало Шрифты для сайта*/
+/*Конец Шрифты для сайта*/
+/*Начало Общие*/
+#wrapper {
+  max-width: 1170px;
+  min-width: 280px;
+  margin: 0 auto;
+}
+#wrapper a,
+#wrapper a:hover {
+  text-decoration: none;
+  /*Убрать подчеркивание у ссылок*/
+}
+/*Конец Общие*/
+/*Начало Стрелки Вперед Назад*/
+#loadcontent a.forward,
+a.back {
+  display: block;
+  height: 30px;
+  width: 50%;
+  background-color: #588fb4;
+  color: #333333;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+}
+#loadcontent a.back {
+  float: left;
+}
+#loadcontent a.forward {
+  float: right;
+}
+#loadcontent a:hover {
+  color: #e8c0a0;
+}
+/*Конец Стрелки Вперед Назад*/
+/*Начало плагина metisMenu*/
+#menu {
+  margin: 0;
+  padding-left: 10px;
+}
+#menu,
+#menu ul {
+  list-style: none;
+}
+#menu a {
+  position: relative;
+  display: block;
+  padding: 4px 10px 4px 0;
+}
+#menu a:hover {
+  background-color: #eeeeee;
+}
+.arrow {
+  float: right;
+}
+.glyphicon.arrow:before {
+  content: "\e079";
+}
+.active > a > .glyphicon.arrow:before {
+  content: "\e114";
+}
+.fa.arrow:before {
+  content: "\f104";
+}
+.active > a > .fa.arrow:before {
+  content: "\f107";
+}
+.plus-times {
+  float: right;
+}
+.fa.plus-times:before {
+  content: "\f067";
+}
+.active > a > .fa.plus-times {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.plus-minus {
+  float: right;
+}
+.fa.plus-minus:before {
+  content: "\f067";
+}
+.active > a > .fa.plus-minus:before {
+  content: "\f068";
+}
+/*Конец плагина metisMenu*/
+#img_header {
+  margin-top: -15px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+/*Начало Header*/
+/*Конец Header*/
+/*Начало Колонка Aside*/
+aside {
+  position: absolute;
+  width: 250px;
+  z-index: 1;
+  background-color: #f8f8f8;
+  min-height: 990px;
+}
+aside h4 {
+  font-size: 22px;
+  padding-left: 10px;
+}
+/*Конец Колонка Aside*/
+/*Начало Колонка Article*/
+article {
+  margin-left: 270px;
+  font-size: large;
+  color: #333333;
+}
+.panel {
+  padding: 0 20px;
+}
+/*Конец Колонка Article*/
+/*Начало Footer*/
+/*Конец Footer*/
+/*# sourceMappingURL=Site.css.map */
+/*# sourceMappingURL=Site.css.map */

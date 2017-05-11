@@ -1,1 +1,55 @@
-﻿
+﻿<nav class="navbar" role="navigation">
+
+    <!-- Класс "container-fluid" - адаптивный контейнер -->
+
+    <div class="container-fluid">
+
+        <!-- Блок с кнопкой "Brand" и кнопкой для развертывания меню (для мобильных устройств) -->
+
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">CИСТЕМА ФИЗИЧЕСКОЙ АКТИВНОСТИ</a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+
+                <!-- Набор иконок для кнопки -->
+
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <!-- Набор ссылок навигации, форм и других элементов меню (в мобильном устройстве будет находится в раскрывающеемся списке) -->
+        <div class="collapse navbar-collapse">
+
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Главная</a></li>
+                <li><a href="#">Видео</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Разное<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">ЛПУ</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Еще что-нибудь</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Нужное</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Еще нужное</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+
+
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Вход</a></li>
+                <li><a href="#">Регистрация</a></li>
+            </ul>
+
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+<img src="~/Content/images/header3.jpg" id="img_header"/>
