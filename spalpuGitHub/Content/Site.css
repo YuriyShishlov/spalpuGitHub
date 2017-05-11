@@ -23,6 +23,22 @@
 .icon-bar {
   border: 1px solid #428bca;
 }
+#fon1:hover,
+#fon2:hover,
+#fon3:hover,
+#fon4:hover,
+#fon5:hover,
+#fon6:hover {
+  background-color: #fff;
+}
+#fon1:visited,
+#fon2:visited,
+#fon3:visited,
+#fon4:visited,
+#fon5:visited,
+#fon6:visited {
+  background-color: #fff;
+}
 /*Конец Навигационное меню*/
 /*Начало Стрелки Вперед Назад*/
 #loadcontent a.forward,
@@ -103,12 +119,12 @@ a.back {
   content: "\f068";
 }
 /*Конец плагина metisMenu*/
+/*Начало Header*/
 #img_header {
   margin-top: -15px;
   margin-bottom: 20px;
   width: 100%;
 }
-/*Начало Header*/
 /*Конец Header*/
 /*Начало Колонка Aside*/
 aside {
@@ -135,5 +151,4 @@ article {
 /*Конец Колонка Article*/
 /*Начало Footer*/
 /*Конец Footer*/
-/*# sourceMappingURL=Site.css.map */
 /*# sourceMappingURL=Site.css.map */
