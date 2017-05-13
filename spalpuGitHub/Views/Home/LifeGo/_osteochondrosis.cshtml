@@ -1,5 +1,4 @@
-﻿<div id="loadcontent">
-    @Ajax.ActionLink("НАЗАД", "Index", "Home", new {strpage = "LifeGo/_smailphilosophy"}, new AjaxOptions() {UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET"}, new {@class = "back"})
+﻿    @Ajax.ActionLink("НАЗАД", "Index", "Home", new {strpage = "LifeGo/_smailphilosophy"}, new AjaxOptions() {UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET"}, new {@class = "back"})
     @Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new {strpage = "LifeGo/_mysshtsy"}, new AjaxOptions() {UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET"}, new {@class = "forward"})
 
     <h1>
@@ -68,8 +67,8 @@
     <p style="text-align: justify;">
         <span style="font-size: 18px;"><strong> Но, самое главное, что при этом <em>страдают <u>Все Окружающие Ткани</u></em> (особенно мышцы) и органы, об этом как-то <em>Забывают</em> перед лицом Серьезности Поражения Позвоночника, а ведь, <u>повторяюсь</u>, в организме все <em>Взаимо</em>связано и <em>Взаимо</em>обусловлено, чаще всего именно <em>с&nbsp; Недоразвития</em> &laquo;Мышечного Корсета&raquo; <u>начиналась</u> Болезнь. Мышцы, сопротивляясь Болезни &laquo;до последнего&raquo;, были вовлечены в &laquo;<em>Порочный Круг</em>&raquo;&nbsp; и именно в <u>этом Месте</u> можно попытаться его <em><u>Разорвать</u></em>.</strong></span>
     </p>
-    <img src="~/Content/images/imagPublic/1/_osteochondrosis.cshtml.jpg"/>
 
-    @Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "LifeGo/_smailphilosophy" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs" }, new { @class = "back" })
-    @Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new {strpage = "LifeGo/_mysshtsy"}, new AjaxOptions() {UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs"}, new {@class = "forward"})
-</div>
+    <img src="~/Content/images/imagPublic/1/_osteochondrosis.cshtml.jpg"/>
+@Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "LifeGo/_smailphilosophy" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs" }, new { @class = "back" })
+@Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "LifeGo/_mysshtsy" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs" }, new { @class = "forward" })
+    

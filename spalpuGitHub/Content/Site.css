@@ -1,6 +1,10 @@
 ﻿/*Начало Определение переменных LESS*/
 /*Фон aside*/
 /*Фон aside при наведениии*/
+/*Цвет шрифта в article и вперед, назад(контент)*/
+/*Цвет шрифта наведенной ссылки*/
+/*Цвет фона стрелок вперед, назад*/
+/*Цвет кнопки для мобильных - бордюра и трех полосок*/
 /*Конец Определение переменных LESS*/
 /*Начало Шрифты для сайта*/
 /*Конец Шрифты для сайта*/
@@ -61,6 +65,9 @@ a.back {
 }
 #loadcontent a:hover {
   color: #e8c0a0;
+}
+.first_back {
+  visibility: hidden;
 }
 /*Конец Стрелки Вперед Назад*/
 /*Начало плагина metisMenu*/
@@ -132,21 +139,53 @@ aside {
   width: 250px;
   z-index: 1;
   background-color: #f8f8f8;
-  min-height: 990px;
 }
 aside h4 {
-  font-size: 22px;
+  font-size: 19px;
   padding-left: 10px;
 }
 /*Конец Колонка Aside*/
 /*Начало Колонка Article*/
 article {
   margin-left: 270px;
+  margin-bottom: 0;
+  font-weight: 100;
+  font-family: Lucida Console, Monaco5, monospace;
   font-size: large;
   color: #333333;
+  padding-top: 0;
+}
+article h1 {
+  margin-top: 0;
+}
+article h1,
+h2 {
+  font-size: 22px;
+}
+article strong {
+  font-weight: 100;
+}
+article p {
+  text-align: justify;
+  text-indent: 37px;
+  margin-bottom: 0;
+}
+article .centeralign {
+  text-align: center;
+}
+article .rightalign {
+  text-align: right;
+}
+.imgPhoto {
+  float: left;
+  margin: 0 20px 18px 0;
+  width: 23%;
+  min-width: 120px;
 }
 .panel {
   padding: 0 20px;
+  margin-bottom: 0;
+  padding-bottom: 30px;
 }
 /*Конец Колонка Article*/
 /*Начало Footer*/

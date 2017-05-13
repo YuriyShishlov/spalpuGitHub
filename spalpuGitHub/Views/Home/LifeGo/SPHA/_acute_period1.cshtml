@@ -1,5 +1,4 @@
-﻿<div id="loadcontent">
-    @Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "LifeGo/SPHA/_attachment" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET" }, new { @class = "back" })
+﻿    @Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "LifeGo/SPHA/_attachment" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET" }, new { @class = "back" })
     @Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "LifeGo/SPHA/_acute_period2" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET" }, new { @class = "forward" })
 
     <h1>Примерный Комплекс Лечебной Гимнастики, применяемый в <em>Остром</em> Периоде (Начальный Этап)</h1>
@@ -28,4 +27,3 @@
 
     @Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "LifeGo/SPHA/_attachment" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs" }, new { @class = "back" })
     @Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "LifeGo/SPHA/_acute_period2" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs" }, new { @class = "forward" })
-</div>

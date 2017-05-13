@@ -1,5 +1,4 @@
-﻿<div id="loadcontent">
-    @Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "LifeGo/SPHA/_special" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET" }, new { @class = "back" })
+﻿    @Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "LifeGo/SPHA/_special" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET" }, new { @class = "back" })
     @Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "LifeGo/SPHA/_all" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET" }, new { @class = "forward" })
 
     <h1>Методические Рекомендации Двигательного Режима в Остром Периоде</h1>
@@ -115,4 +114,3 @@
 
     @Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "LifeGo/SPHA/_special" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs" }, new { @class = "back" })
     @Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "LifeGo/SPHA/_all" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs" }, new { @class = "forward" })
-</div>

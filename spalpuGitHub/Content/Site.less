@@ -1,10 +1,10 @@
 ﻿/*Начало Определение переменных LESS*/
 @color_background: #F8F8F8; /*Фон aside*/
 @color_active: #EEEEEE; /*Фон aside при наведениии*/
-@color_font_article: #333333;
-@color_a_hover: #E8C0A0;
-@color_back_forward: #588FB4;
-@color_font: #428BCA;
+@color_font_article: #333333; /*Цвет шрифта в article и вперед, назад(контент)*/
+@color_a_hover: #E8C0A0; /*Цвет шрифта наведенной ссылки*/
+@color_back_forward: #588FB4; /*Цвет фона стрелок вперед, назад*/
+@color_font: #428BCA; /*Цвет кнопки для мобильных - бордюра и трех полосок*/
 /*Конец Определение переменных LESS*/
 
 /*Начало Шрифты для сайта*/
@@ -12,6 +12,9 @@
 /*Конец Шрифты для сайта*/
 
 /*Начало Общие*/
+body {
+}
+
 #wrapper {
     max-width: 1170px;
     min-width: 280px;
@@ -37,7 +40,7 @@
     background-color: #fff;
 }
 
-#fon1:visited , #fon2:visited, #fon3:visited, #fon4:visited, #fon5:visited, #fon6:visited {
+#fon1:visited, #fon2:visited, #fon3:visited, #fon4:visited, #fon5:visited, #fon6:visited {
     background-color: #fff;
 }
 /*Конец Навигационное меню*/
@@ -65,6 +68,10 @@
 
 #loadcontent a:hover {
     color: @color_a_hover;
+}
+
+.first_back {
+    visibility: hidden;
 }
 /*Конец Стрелки Вперед Назад*/
 
@@ -153,11 +160,10 @@ aside {
     width: 250px;
     z-index: 1;
     background-color: #f8f8f8;
-    min-height: 990px;
 }
 
 aside h4 {
-    font-size: 22px;
+    font-size: 19px;
     padding-left: 10px;
 }
 /*Конец Колонка Aside*/
@@ -165,12 +171,51 @@ aside h4 {
 /*Начало Колонка Article*/
 article {
     margin-left: 270px;
+    margin-bottom: 0;
+    font-weight: 100;
+    font-family: Lucida Console, Monaco5, monospace;
     font-size: large;
     color: @color_font_article;
+    padding-top: 0;
+}
+
+article h1 {
+    margin-top: 0;
+}
+
+article h1, h2 {
+    font-size: 22px;
+}
+
+article strong {
+    font-weight: 100;
+}
+
+article p {
+    text-align: justify;
+    text-indent: 37px;
+    margin-bottom: 0;
+}
+
+article .centeralign {
+    text-align: center;
+}
+
+article .rightalign {
+    text-align: right;
+}
+
+.imgPhoto {
+    float: left;
+    margin: 0 20px 18px 0;
+    width: 23%;
+    min-width: 120px;
 }
 
 .panel {
     padding: 0 20px;
+    margin-bottom: 0;
+    padding-bottom: 30px;
 }
 /*Конец Колонка Article*/
 

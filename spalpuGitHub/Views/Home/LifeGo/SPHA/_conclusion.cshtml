@@ -1,5 +1,4 @@
-﻿<div id="loadcontent">
-    @Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "LifeGo/SPHA/_neck_massage" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET" }, new { @class = "back" })
+﻿    @Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "LifeGo/SPHA/_neck_massage" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET" }, new { @class = "back" })
     @Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "LifeGo/SPHA/_attachment" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET" }, new { @class = "forward" })
 
     <h1>Заключение</h1>
@@ -11,4 +10,3 @@
 
     @Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "LifeGo/SPHA/_neck_massage" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs" }, new { @class = "back" })
     @Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "LifeGo/SPHA/_attachment" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs" }, new { @class = "forward" })
-</div>

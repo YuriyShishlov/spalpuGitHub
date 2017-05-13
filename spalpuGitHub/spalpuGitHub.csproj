@@ -143,6 +143,7 @@
     <Content Include="Content\Site.css.map">
       <DependentUpon>Site.css</DependentUpon>
     </Content>
+    <Content Include="Content\reset.less" />
     <None Include="Content\Site.less" />
     <Content Include="Content\images\andr.jpg" />
     <Content Include="Content\images\favicon.ico" />

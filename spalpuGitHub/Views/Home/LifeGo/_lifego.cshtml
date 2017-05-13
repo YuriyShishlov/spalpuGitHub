@@ -1,10 +1,10 @@
-﻿<div id="loadcontent">
+﻿    @Ajax.ActionLink("НАЗАД", "Index", "Home", new { strpage = "LifeGo/_osteochondrosis" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET" }, new { @class = "back first_back" })
     @Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "LifeGo/_smailphilosophy" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET" }, new { @class = "forward" })
 
     <h1>Жизнь - это Движение</h1>
 
     <p class="justifyaling">
-         <strong>Жизнь &ndash; это Движение&raquo;</strong><strong>&hellip; Банальный Девиз, над которым обычно не задумываешься, пока не Почувствуешь, что не можешь полноценно Жить и Двигаться. Вообще, практически все &laquo;вечные&raquo; Истины считаются банальными &nbsp;&ndash; &nbsp;знакомо настолько, &nbsp;что перестаешь замечать.</strong>
+        <strong>Жизнь &ndash; это Движение&raquo;</strong><strong>&hellip; Банальный Девиз, над которым обычно не задумываешься, пока не Почувствуешь, что не можешь полноценно Жить и Двигаться. Вообще, практически все &laquo;вечные&raquo; Истины считаются банальными &nbsp;&ndash; &nbsp;знакомо настолько, &nbsp;что перестаешь замечать.</strong>
     </p>
 
     <p class="justifyaling">
@@ -25,4 +25,3 @@
     <p><strong> Неблагодарность попыток Убедить отдельного человека&nbsp;&nbsp; (или все Человечество в целом<em>)</em></strong><em> <strong>Очевидна</strong></em><strong> (отсюда иногда возникает Желание просто молча Делать свое Дело). Дело в том, что <em>мы все всё <u>Знаем</u></em>. И, самое забавное, что это <em>Действительно Так</em>. Но от владения Информацией до применения ее как Руководства <em>к Действию</em> дистанция огромного размера (читай М. Веллера &laquo;Все о Жизни&raquo;). Поэтому <em>психо</em>логические феномены оставим Специалистам, скептики пусть брюзжат, а &hellip; &laquo;караван идет&raquo;.</strong></p>
 
     @Ajax.ActionLink("ВПЕРЕД", "Index", "Home", new { strpage = "LifeGo/_smailphilosophy" }, new AjaxOptions() { UpdateTargetId = "loadcontent", InsertionMode = InsertionMode.Replace, HttpMethod = "GET", OnComplete = "OnCompleteJs" }, new { @class = "forward" })
-</div>

@@ -2,10 +2,14 @@
     ViewBag.Title = "СФА";
 }
 @section aside{
-    @Html.Partial("_TreePartial")
+    <div class="panel panel-default">
+        @Html.Partial("_TreePartial")
+    </div>
 }
 @section article{
-    @Html.Partial("LifeGo/_main")
+    <div class="panel panel-default">
+        @Html.Partial("LifeGo/_main")
+    </div>
 }
 @section scripts{
     <script type="text/javascript">
