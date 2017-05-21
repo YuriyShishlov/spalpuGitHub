@@ -1,24 +1,39 @@
 ﻿/*Начало Определение переменных LESS*/
-@color_background: #F8F8F8; /*Фон aside*/
-@color_active: #EEEEEE; /*Фон aside при наведениии*/
-@color_font_article: #333333; /*Цвет шрифта в article и вперед, назад(контент)*/
-@color_a_hover: #E8C0A0; /*Цвет шрифта наведенной ссылки*/
-@color_back_forward: #588FB4; /*Цвет фона стрелок вперед, назад*/
-@color_font: #428BCA; /*Цвет кнопки для мобильных - бордюра и трех полосок*/
+@background_body: #EFCBB5; /*Фон body*/
+@background_aside: #F8F8F8; /*Фон aside*/
+@background_aside_active: #EEEEEE; /*Фон aside при наведениии*/
+@color_font_article: #0d49a8; /*Цвет шрифта в article*/
+@color_back_forward_hover: #2eb528; /*Цвет шрифта наведенной ссылки(стрелок вперед, назад)*/
+@color_back_forward: #808080; /*Цвет шрифта стрелок вперед, назад*/
+@background_back_forward: #add1e5; /*Цвет фона стрелок вперед, назад*/
+@button_mobile: #428BCA; /*Цвет кнопки для мобильных - бордюра и трех полосок*/
 /*Конец Определение переменных LESS*/
 
 /*Начало Шрифты для сайта*/
-
-/*Конец Шрифты для сайта*/
-
-/*Начало Общие*/
 body {
+    /*background: url(images/page.jpg);*/ /*Общий фон на странице*/
+    /*background-attachment: fixed;*/ /*Фиксация фона*/
+    /*background-color: @background_body;*/
+    font-size: 170%;
 }
 
+article {
+    font-size: 100%;
+}
+/*Конец Шрифты и фон для сайта*/
+
+/*Начало Общие*/
 #wrapper {
     max-width: 1170px;
     min-width: 280px;
     margin: 0 auto;
+    background-color: #fff;
+    padding: 0 20px;
+    margin-top: 20px;
+    border-radius: 20px 20px 0 0;
+    -moz-border-radius: 20px 20px 0 0;
+    -webkit-border-radius: 20px 20px 0 0;
+    -khtml-border-radius: 20px 20px 0 0;
 }
 
 #wrapper a,
@@ -29,20 +44,20 @@ body {
 
 /*Начало Навигационное меню*/
 .navbar-toggle {
-    border-color: @color_font;
+    border-color: @button_mobile;
 }
 
 .icon-bar {
-    border: 1px solid @color_font;
+    border: 1px solid @button_mobile;
 }
 
-#fon1:hover, #fon2:hover, #fon3:hover, #fon4:hover, #fon5:hover, #fon6:hover {
+/*#fon1:hover, #fon2:hover, #fon3:hover, #fon4:hover, #fon5:hover, #fon6:hover {
     background-color: #fff;
 }
 
 #fon1:visited, #fon2:visited, #fon3:visited, #fon4:visited, #fon5:visited, #fon6:visited {
     background-color: #fff;
-}
+}*/
 /*Конец Навигационное меню*/
 
 /*Начало Стрелки Вперед Назад*/
@@ -50,12 +65,16 @@ body {
     display: block;
     height: 30px;
     width: 50%;
-    background-color: @color_back_forward;
-    color: @color_font_article;
+    background-color: @background_back_forward;
+    color: @color_back_forward;
     text-align: center;
     line-height: 30px;
     font-weight: bold;
     margin-bottom: 20px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
 }
 
 #loadcontent a.back {
@@ -67,7 +86,7 @@ body {
 }
 
 #loadcontent a:hover {
-    color: @color_a_hover;
+    color: @color_back_forward_hover;
 }
 
 .first_back {
@@ -93,7 +112,7 @@ body {
 }
 
 #menu a:hover {
-    background-color: @color_active;
+    background-color: @background_aside_active;
 }
 
 .arrow {
@@ -159,7 +178,11 @@ aside {
     position: absolute;
     width: 250px;
     z-index: 1;
-    background-color: #f8f8f8;
+    margin-left: 0 20px;
+}
+
+aside .panel-default {
+    background-color: @background_aside;
 }
 
 aside h4 {
@@ -174,9 +197,7 @@ article {
     margin-bottom: 0;
     font-weight: 100;
     font-family: Lucida Console, Monaco5, monospace;
-    font-size: large;
     color: @color_font_article;
-    padding-top: 0;
 }
 
 article h1 {
@@ -219,8 +240,28 @@ article .rightalign {
 }
 /*Конец Колонка Article*/
 
-/*Начало Footer*/
+/*Начало блока footer*/
+footer {
+    clear: both;
+    width: 100%;
+    height: 33px;
+    background-color: #c1c4c2;
+    border-radius: 0px 0px 20px 20px;
+    -moz-border-radius: 0px 0px 20px 20px;
+    -webkit-border-radius: 0px 0px 20px 20px;
+    -khtml-border-radius: 0px 0px 20px 20px;
+}
 
-/*Конец Footer*/
+footer p {
+    text-align: center;
+    padding-top: 7px;
+}
+
+/*footer span {
+        font-family: Courier New, Courier, monospace;
+        font-size: 1.1em;
+        font-style: oblique;
+    }*/ /*Было: <span>.vebner.ru</span>*/
+/*Конец блока footer*/
 
 
