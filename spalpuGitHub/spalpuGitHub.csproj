@@ -128,15 +128,21 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\LessTransform.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\AccountModels.cs" />
     <Compile Include="NewAjaxActionLink\HelperExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\bootstrap.less" />
+    <Content Include="App_Data\UserDb.mdf" />
+    <Content Include="App_Data\UserDb_log.ldf">
+      <DependentUpon>UserDb.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\images\header.png" />
     <Content Include="Content\images\header2.jpg" />
     <Content Include="Content\images\header3.jpg" />
@@ -557,11 +563,11 @@
     <Content Include="Views\Home\LifeGo\_relaxation.cshtml" />
     <Content Include="Views\Home\LifeGo\_smailphilosophy.cshtml" />
     <Content Include="Views\Home\LifeGo\_whomysshtsy.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\Action.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />

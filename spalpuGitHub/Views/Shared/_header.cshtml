@@ -7,7 +7,7 @@
         <!-- Блок с кнопкой "Brand" и кнопкой для развертывания меню (для мобильных устройств) -->
 
         <div class="navbar-header">
-            @Html.ActionLink("CИСТЕМА ФИЗИЧЕСКОЙ АКТИВНОСТИ", "Index", "Home", new {@class="navbar-brand"})
+            @Html.ActionLink("CИСТЕМА ФИЗИЧЕСКОЙ АКТИВНОСТИ", "Index", "Home", new { @class = "navbar-brand" })
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Включить навигацию</span>
 
@@ -40,18 +40,27 @@
                 <li><a href="#" class="nab" id="fon4">Контакты</a></li>
             </ul>
 
-
-
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#" id="fon5">Вход</a></li>
-                <li><a href="#" id="fon6">Регистрация</a></li>
-            </ul>
+            @if (Request.IsAuthenticated)
+            {
+                <ul class="nav navbar-nav navbar-right">
+                    <li>@Html.ActionLink("Выход", "Login", "Account", routeValues: null, htmlAttributes: new { id = "fon5" })</li>
+                    <li>@Html.ActionLink("З" + User.Identity.Name+"", "Register", "Account", routeValues: null, htmlAttributes: new { id = "fon6" })</li>
+                </ul>
+            }
+            else
+            {
+                <ul class="nav navbar-nav navbar-right">
+                    <li>@Html.ActionLink("Вход", "Login", "Account", routeValues: null, htmlAttributes: new { id = "fon5" })</li>
+                    <li>@Html.ActionLink("Регистрация", "Register", "Account", routeValues: null, htmlAttributes: new { id = "fon6" })</li>
+                </ul>
+            }
+            
 
         </div>
         <!-- /.navbar-collapse -->
     </div>
     <!-- /.container-fluid -->
 </nav>
-<img src="~/Content/images/header3.jpg" id="img_header"/>
+<img src="~/Content/images/header3.jpg" id="img_header" />
 @*<img src="~/Content/images/header2.jpg" id="img_header" />*@
 @*<img src="~/Content/images/header.png"  id="img_header"/>*@
