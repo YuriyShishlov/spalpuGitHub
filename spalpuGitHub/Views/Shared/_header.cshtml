@@ -43,8 +43,10 @@
             @if (Request.IsAuthenticated)
             {
                 <ul class="nav navbar-nav navbar-right">
-                    <li>@Html.ActionLink("Выход", "Login", "Account", routeValues: null, htmlAttributes: new { id = "fon5" })</li>
-                    <li>@Html.ActionLink("З" + User.Identity.Name+"", "Register", "Account", routeValues: null, htmlAttributes: new { id = "fon6" })</li>
+                    <li>@Html.ActionLink("Выход", "Logoff", "Account", routeValues: null, htmlAttributes: new { id = "fon5" })</li>
+                    @*<li><a href="#">@User.Identity.Name</a></li>*@
+                    @*<li>@Html.ActionLink("" + @User.Identity.Name + "", "Action", "Account", routeValues: null, htmlAttributes: new { id = "fon6" })</li>*@
+                    <li>@Html.ActionLink("Y"+ User.Identity.Name, "Action", "Account", routeValues: null, htmlAttributes: new { id = "fon6" })</li>
                 </ul>
             }
             else
